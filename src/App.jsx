@@ -9,7 +9,7 @@ function App() {
 
   const addTodo = (todo) => {
     setTodos((previousElements) => [
-      { id: Date.now, ...todo },
+      { id: Date.now(), ...todo },
       ...previousElements,
     ]);
   };
